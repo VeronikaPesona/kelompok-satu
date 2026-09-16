@@ -7,11 +7,9 @@ function main() {
     jumlahGenap = 0;
     jumlahGanjil = 0;
     totalSeluruh = 0;
-    window.alert("Berapa banyak angka yang ingin dianalisis?");
-    jumlahData = Number(window.prompt('Enter a value for jumlahData'));
+    jumlahData = Number(prompt("Berapa banyak angka yang ingin dianalisis? "));
     for (i = 1; i <= jumlahData; i++) {
-        window.alert("Masukkan angka: ");
-        angka = Number(window.prompt('Enter a value for angka'));
+        angka = Number(prompt("Masukkan angka: "));
         totalSeluruh = totalSeluruh + angka;
         if (angka > 0) {
             jumlahPositif = jumlahPositif + 1;
@@ -27,10 +25,11 @@ function main() {
         }
     }
     rata2 = totalSeluruh / jumlahData;
-    window.alert("Jumlah angka positif: " + jumlahPositif);
-    window.alert("Jumlah angka negatif: " + jumlahNegatif);
-    window.alert("Jumlah angka ganjil: " + jumlahGanjil);
-    window.alert("Jumlah angka genap: " + jumlahGenap);
-    window.alert("Total seluruh angka yang dimasukkan: " + totalSeluruh);
-    window.alert("Rata-rata: " + rata2);
+    alert("Jumlah angka positif: " + jumlahPositif);
+    alert("Jumlah angka negatif: " + jumlahNegatif);
+    alert("Jumlah angka ganjil: " + jumlahGanjil);
+    alert("Jumlah angka genap: " + jumlahGenap);
+    alert("Total seluruh angka yang dimasukkan: " + totalSeluruh);
+    alert("Rata-rata: " + rata2);
 }
+main()
