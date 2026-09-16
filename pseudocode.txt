@@ -1,0 +1,36 @@
+Function Main
+    Declare Integer jumlahData, i, jumlahPositif, jumlahNegatif, jumlahGenap, jumlahGanjil
+    Declare Real angka, totalSeluruh, rata2
+
+    Assign jumlahPositif = 0
+    Assign jumlahNegatif = 0
+    Assign jumlahGenap = 0
+    Assign jumlahGanjil = 0
+    Assign totalSeluruh = 0
+    Output "Berapa banyak angka yang ingin dianalisis?"
+    Input jumlahData
+    For i = 1 to jumlahData
+        Output "Masukkan angka: "
+        Input angka
+        Assign totalSeluruh = totalSeluruh + angka
+        If angka > 0
+            Assign jumlahPositif = jumlahPositif + 1
+        Else
+            If angka < 0
+                Assign jumlahNegatif = jumlahNegatif + 1
+            End
+        End
+        If Abs(angka) % 2 == 0
+            Assign jumlahGenap = jumlahGenap + 1
+        Else
+            Assign jumlahGanjil = jumlahGanjil + 1
+        End
+    End
+    Assign rata2 = totalSeluruh / jumlahData
+    Output "Jumlah angka positif: " & jumlahPositif
+    Output "Jumlah angka negatif: " & jumlahNegatif
+    Output "Jumlah angka ganjil: " & jumlahGanjil
+    Output "Jumlah angka genap: " & jumlahGenap
+    Output "Total seluruh angka yang dimasukkan: " & totalSeluruh
+    Output "Rata-rata: " & rata2
+End
