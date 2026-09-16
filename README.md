@@ -10,11 +10,11 @@
 
 | No. | Nama | NIM | Peran |
 |---|---|---|---|
-| 1 | Veronika Pesona H. C. | 2610312060 | Project Coordinator |
-| 2 | M. Aiman Nabil | 2610312063 | Algorithm |
+| 1 | Veronika Pesona H. C. | 2610312060 | Koordinator Proyek |
+| 2 | M. Aiman Nabil | 2610312063 | Algoritma |
 | 3 | M. Fahri Abdillah | 2610312064 | Flowchart |
 | 4 | Daffi Insani Rasya Affaren | 2610312055 | JavaScript |
-| 5 | Nabilla Hamdani | 2510312090 | Testing & Documentation |
+| 5 | Nabilla Hamdani | 2510312090 | Uji Coba & Dokumentasi |
 
 ---
 
