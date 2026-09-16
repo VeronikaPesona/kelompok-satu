@@ -87,7 +87,7 @@ Algoritma yang digunakan dalam program tersebut dijelaskan dalam:
 Flowchart dibuat menggunakan Flowgorithm.
 
 File:
-[flowchart.fprg](flowchart.fprg)
+[flowgorithm.fprg](flowgorithm.fprg)
 
 ---
 
