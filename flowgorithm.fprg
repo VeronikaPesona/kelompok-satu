@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="kel 1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-16 10:19:30 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVBGTE82Mzc7MjAyNi0wOS0xNjswNDo1Mzo1NyBBTTsyNzQy"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVBGTE82Mzc7MjAyNi0wOS0xNjsxMDoxOTozMCBBTTszOzI4NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jumlahData, i, jumlahPositif, jumlahNegatif, jumlahGenap, jumlahGanjil" type="Integer" array="False" size=""/>
+            <declare name="angka, totalSeluruh, rata2" type="Real" array="False" size=""/>
+            <assign variable="jumlahPositif" expression="0"/>
+            <assign variable="jumlahNegatif" expression="0"/>
+            <assign variable="jumlahGenap" expression="0"/>
+            <assign variable="jumlahGanjil" expression="0"/>
+            <assign variable="totalSeluruh" expression="0"/>
+            <output expression="&quot;Berapa banyak angka yang ingin dianalisis?&quot;" newline="True"/>
+            <input variable="jumlahData"/>
+            <for variable="i" start="1" end="jumlahData" direction="inc" step="1">
+                <output expression="&quot;Masukkan angka: &quot;" newline="True"/>
+                <input variable="angka"/>
+                <assign variable="totalSeluruh" expression="totalSeluruh + angka"/>
+                <if expression="angka &gt; 0">
+                    <then>
+                        <assign variable="jumlahPositif" expression="jumlahPositif + 1"/>
+                    </then>
+                    <else>
+                        <if expression="angka &lt; 0">
+                            <then>
+                                <assign variable="jumlahNegatif" expression="jumlahNegatif + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <if expression="Abs(angka) % 2 == 0">
+                    <then>
+                        <assign variable="jumlahGenap" expression="jumlahGenap + 1"/>
+                    </then>
+                    <else>
+                        <assign variable="jumlahGanjil" expression="jumlahGanjil + 1"/>
+                    </else>
+                </if>
+            </for>
+            <assign variable="rata2" expression="totalSeluruh / jumlahData"/>
+            <output expression="&quot;Jumlah angka positif: &quot; &amp; jumlahPositif" newline="True"/>
+            <output expression="&quot;Jumlah angka negatif: &quot; &amp; jumlahNegatif" newline="True"/>
+            <output expression="&quot;Jumlah angka ganjil: &quot; &amp; jumlahGanjil" newline="True"/>
+            <output expression="&quot;Jumlah angka genap: &quot; &amp; jumlahGenap" newline="True"/>
+            <output expression="&quot;Total seluruh angka yang dimasukkan: &quot; &amp; totalSeluruh" newline="True"/>
+            <output expression="&quot;Rata-rata: &quot; &amp; rata2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
