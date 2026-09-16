@@ -1,4 +1,4 @@
-# Proyek Kecil Pemrograman
+# Proyek Pemrograman
 
 ## 1. Informasi Kelompok
 
