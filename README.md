@@ -88,6 +88,7 @@ Flowchart dibuat menggunakan Flowgorithm.
 
 File:
 [flowgorithm.fprg](flowgorithm.fprg)
+[flowchart.png](flowchart.png)
 
 ---
 
